@@ -1,0 +1,43 @@
+name: Pubblica KING BOOSTER
+on:
+  push:
+    branches: [main]
+    paths: ['release/**', 'tools/**', 'UpdatePublicKey.xml', '.github/workflows/publish.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: king-booster-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica il commit richiesto
+        shell: bash
+        run: |
+          git clone --no-checkout "https://github.com/$GITHUB_REPOSITORY.git" project
+          cd project
+          git checkout --detach "$GITHUB_SHA"
+      - name: Verifica firma e pacchetto
+        working-directory: project
+        run: node tools/verify-release.mjs "$GITHUB_REPOSITORY"
+      - name: Crea la release ufficiale
+        working-directory: project
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          version="$(cat release/version.txt)"
+          if gh release view "v$version" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "La release v$version esiste già: nessun file viene sovrascritto."
+            exit 0
+          fi
+          gh release create "v$version" \
+            release/KING_BOOSTER_runtime_x64.zip \
+            release/king-booster-update.json \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "KING BOOSTER $version" \
+            --notes-file release/notes.md \
+            --latest
