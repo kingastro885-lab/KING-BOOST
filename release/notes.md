@@ -1,8 +1,8 @@
-# KING BOOSTER 1.8.0
+# KING BOOSTER 1.8.1
 
-# KING BOOSTER 1.8
+# KING BOOSTER 1.8.1
 
-La scia luminosa segue il mouse con colori e particelle ispirati all’onda 1.7. La luminosità diminuisce con la velocità e le particelle si dissolvono nel tempo. Nessuna onda al clic. Interruttore in Impostazioni.
+Scia continua con tratti collegati e bordi arrotondati; colori, particelle e attenuazione della 1.8 conservati.
 
 
 Pacchetto Windows x64 con metadati firmati. Conserva impostazioni e backup dell'utente.
