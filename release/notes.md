@@ -1,6 +1,6 @@
-Cornici viola e bianche come nella versione 1.4, senza alone largo.
-Motion blur verticale accentuato sui lati e ridotto al centro durante lo scroll.
-Scie bianche laterali che si muovono in direzione opposta al gesto e si invertono quando cambia lo scroll.
-Attacco 65 ms, persistenza 110 ms e dissolvenza 260 ms. Effetti rimossi a riposo, al cambio sezione e quando la finestra perde il focus.
-Controlli indipendenti per animazioni, blur e scie in Impostazioni. Rispettata la preferenza animazioni Windows.
-Aggiornamento compatibile con il canale esistente; impostazioni e backup personali conservati.
+Sfondo cosmico nativo ispirato al file HTML fornito: fasci oscillanti, nebulose, stelle scintillanti, stelle cadenti e lame di luce.
+Onde luminose nel punto del clic, espansione e dissolvenza in 1,6 secondi.
+Apertura di ogni sezione dalla sua voce del menu: scala e spostamento verso la posizione finale in 620 ms.
+Controlli separati per sfondo, onde e apertura sezioni. Rispetto delle animazioni Windows, pausa dello sfondo quando la finestra non e attiva.
+Cornici della 1.4 e motion blur laterale della 1.4.1 conservati. Contatori e monitoraggio reali invariati.
+Prototipo delle transizioni in Figma e tavola di direzione visiva in Canva. Obiettivo 60 fps, dipendente dal dispositivo.
