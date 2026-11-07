@@ -1,5 +1,17 @@
-Avvio normale sempre con richiesta amministratore UAC; annullare impedisce l'apertura dell'interfaccia. Gli strumenti diagnostici isolati non richiedono elevazione.
-Salvataggio delle preferenze di sistema, GPU, giochi e app senza creare nuovi backup. Verifica dei valori e scritture atomiche conservate. Recupero di errori parziali in memoria, senza copie persistenti. I backup precedenti non vengono eliminati.
-Corretto il blocco di sfondo e onde quando Windows disattiva le animazioni o segnala rendering software. Gli interruttori dell'app restano rispettati.
-Updater compatibile con l'app amministratore; firma e hash continuano a essere verificati. La copia di recupero dei binari dell'app durante gli aggiornamenti resta attiva.
-217 controlli superati, inclusi avanzamento reale dello sfondo, onde con policy normale, salvataggio ripetuto senza backup. UAC da verificare interattivamente sul dispositivo; nessun frame rate misurato o garantito.
+# KING BOOSTER 1.7.0
+
+# KING BOOSTER 1.7
+
+- Onda al clic basata sul file originale Onda d’urto viola.html, incorporato senza modificare i suoi byte.
+- Modalità fisica predefinita: propagazione 2D, riflessioni sui bordi e sulle cornici, aggiramento degli ostacoli e rimbalzi delle particelle.
+- Modalità HTML originale selezionabile in Impostazioni disattivando Fisica dell’onda.
+- Colori viola, nucleo bianco, bagliori e particelle derivati dal renderer originale. Le collisioni cambiano necessariamente la forma dell’onda.
+- Animazione attiva solo durante l’effetto; griglia limitata, massimo sei impulsi e arresto a riposo.
+- Conservati avvio amministratore, salvataggio diretto e sfondo della 1.6.1.
+
+Requisiti: Windows 10/11 x64, .NET Framework 4.8 e Microsoft Edge WebView2 Runtime per l’onda HTML. Se il runtime manca l’app resta utilizzabile e segnala il requisito.
+
+Verifiche: 222 controlli applicativi, 7 prove numeriche della fisica e rendering delle 9 sezioni. Nessuna promessa di 60 fps su ogni PC.
+
+
+Pacchetto Windows x64 con metadati firmati. Conserva impostazioni e backup dell'utente.
