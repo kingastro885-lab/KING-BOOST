@@ -1,6 +1,5 @@
-Sfondo cosmico nativo ispirato al file HTML fornito: fasci oscillanti, nebulose, stelle scintillanti, stelle cadenti e lame di luce.
-Onde luminose nel punto del clic, espansione e dissolvenza in 1,6 secondi.
-Apertura di ogni sezione dalla sua voce del menu: scala e spostamento verso la posizione finale in 620 ms.
-Controlli separati per sfondo, onde e apertura sezioni. Rispetto delle animazioni Windows, pausa dello sfondo quando la finestra non e attiva.
-Cornici della 1.4 e motion blur laterale della 1.4.1 conservati. Contatori e monitoraggio reali invariati.
-Prototipo delle transizioni in Figma e tavola di direzione visiva in Canva. Obiettivo 60 fps, dipendente dal dispositivo.
+Avvio normale sempre con richiesta amministratore UAC; annullare impedisce l'apertura dell'interfaccia. Gli strumenti diagnostici isolati non richiedono elevazione.
+Salvataggio delle preferenze di sistema, GPU, giochi e app senza creare nuovi backup. Verifica dei valori e scritture atomiche conservate. Recupero di errori parziali in memoria, senza copie persistenti. I backup precedenti non vengono eliminati.
+Corretto il blocco di sfondo e onde quando Windows disattiva le animazioni o segnala rendering software. Gli interruttori dell'app restano rispettati.
+Updater compatibile con l'app amministratore; firma e hash continuano a essere verificati. La copia di recupero dei binari dell'app durante gli aggiornamenti resta attiva.
+217 controlli superati, inclusi avanzamento reale dello sfondo, onde con policy normale, salvataggio ripetuto senza backup. UAC da verificare interattivamente sul dispositivo; nessun frame rate misurato o garantito.
