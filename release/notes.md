@@ -1,8 +1,9 @@
-# KING BOOSTER 1.8.1
+# KING BOOSTER 1.8.2
 
-# KING BOOSTER 1.8.1
+# KING BOOSTER 1.8.2
 
-Scia continua con tratti collegati e bordi arrotondati; colori, particelle e attenuazione della 1.8 conservati.
+Scia continua pi� densa e larga vicino al cursore, che si assottiglia verso la coda. Conservati colori, particelle e dissolvenza.
 
 
 Pacchetto Windows x64 con metadati firmati. Conserva impostazioni e backup dell'utente.
+
